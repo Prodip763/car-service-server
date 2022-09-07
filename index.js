@@ -126,6 +126,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('running car server')
 });
+app.get('/hero', (req,res)=>{
+    res.send('Hero change heroku update');
+});
 
 app.listen(port, () => {
     console.log('Lisening to port', port);
